@@ -88,29 +88,12 @@ int main()
 	char slovo[7];
 	cout << "Vvedite slovo iz 7 bukv + ;" << endl;
 	cin.getline(slovo, 7, ';');
-	for (int f = 0; f < 7; f++);
-	{
-		if (slovo[0] != slovo[6])
-		{
-			return false;
-			cout << "Sorry,this is not polindrom!" << endl;
-		}
-		else if (slovo[1] != slovo[5])
-		{
-			return false;
-			cout << "Sorry,this is not polindrom!" << endl;
-		}
-		else if (slovo[2] != slovo[4])
-		{
-			return false;
-			cout << "Sorry,this is not polindrom!" << endl;
-		}
-		else cout << "This is polindrom!" << endl;
+
+	if ((slovo[0] == slovo[6]) && (slovo[1] == slovo[5]) && (slovo[2] == slovo[4])) {
+		cout << "This is polindrom!" << endl;
+	} else {
+		cout << "Sorry,this is not polindrom!" << endl;
 	}
-
-
-
-
 
 	system("pause");
 	return 0;
